@@ -27,6 +27,7 @@ namespace SpecFlowProject1.StepDefinitions
         public void WhenIFillAllTheDetailsInContactSalesForm()
         {
             ContactSalesform CS = new ContactSalesform(driver);
+            CS.Contact_S.Click();
             CS.C_Fname.SendKeys("Pooja");
             CS.C_Lname.SendKeys("Gobbur");
             CS.C_Email.SendKeys("pooja@quali.com");
